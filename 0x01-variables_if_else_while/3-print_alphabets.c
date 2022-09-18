@@ -1,3 +1,5 @@
+#include <stio.h>
+
 int main () {
    char ch;
 
