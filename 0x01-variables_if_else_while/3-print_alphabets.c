@@ -1,35 +1,25 @@
-#include <stio.h>
+#include <stdio.h>
 
-int main () {
-   char ch;
-
-   for(ch = 'A' ; ch <= 'Z' ; ch++) {
-      putchar(ch);
-   }
-   for(ch = 'a' ; ch <= 'z' ; ch++) {
-      putchar(ch);
-   }
-   putchar ('\n');
-   return(0);
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - Prints alphabets in lowercase, then in uppercase
+* Return: 0
+**/
+
 int main(void)
 {
-char x = 'a';
-while (x <= 'z')
-{
-putchar(x);
-x++;
-}
-x = 'A';
-while (x <= 'Z')
-{
-putchar(x);
-x++;
-}
-putchar('\n');
-return (0);
+	char l_letter;
+	char u_letter;
+
+	for (l_letter = 97; l_letter <= 122; l_letter++)
+	{
+		putchar(l_letter);
+	}
+
+	for (u_letter = 'A'; u_letter <= 'Z'; u_letter++)
+	{
+		putchar(u_letter);
+	}
+	putchar('\n');
+
+	return (0);
 }
